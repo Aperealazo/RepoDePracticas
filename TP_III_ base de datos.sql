@@ -23,25 +23,7 @@ insert into Usuarios(ID_US,NOMBRE,APELLIDO,REGISTRO,EDAD,CORREO) values
     (19, 'Karina', 'Allende', 'Facebook', 35, 'karinaaaa@hotmail.com'),
     (20, 'Pedro', 'Cáceres', 'Google', 42, 'pedrocaceres@fibertel.com.ar');
 
---consultas:
-select * from Usuarios;
---CONSULTA CUESTIONARIO 1 
-select nombre,apellido from Usuarios;
---CONSULTA CUESTIONARIO 2 
-select apellido,CORREO from Usuarios;
---CONSULTA CUESTIONARIO 3 
-select nombre,apellido,edad,registro from Usuarios where registro='Facebook';
---CONSULTA CUESTIONARIO 4 
-select nombre,apellido,edad from Usuarios where edad >=35;
---CONSULTA CUESTIONARIO 5 
-select nombre,correo,registro from Usuarios where registro='Facebook' or registro='Twitter';
---CONSULTA CUESTIONARIO 6 
-select id_us,nombre,correo,edad from Usuarios where edad is null;
---CONSULTA CUESTIONARIO 7 
-select * from Usuarios where registro='Google' and edad >25;
---CONSULTA CUESTIONARIO 8
-delete from usuarios where id_us=8;
-select * from usuarios;
+
 --CONSULTA CUESTIONARIO 9
 insert into Usuarios(ID_US,NOMBRE,APELLIDO,REGISTRO,EDAD,CORREO) values(21,'tomas','ochoa','Facebook',28,'tomasochoa@gmail.com');
 select * from usuarios;
